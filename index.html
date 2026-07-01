@@ -1,19 +1,108 @@
-<!-- Partie 1: Header (L'accueil) -->
-<header>
-    <h1>House of Laura</h1>
-    <p class="tagline">Bien plus qu'une streameuse. Une icône.</p>
-    <a href="https://www.twitch.tv/houseoflaura" target="_blank" class="btn-twitch">Entrer dans l'Arène</a>
-</header>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Laura | The GOAT</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Poppins:wght@600&display=swap');
 
-<!-- Partie 2: Contenu (Le cœur du site) -->
-<div class="content">
-    <div class="feature-card">
-        <h3>Pourquoi la GOAT ?</h3>
-        <p>Il ne s'agit pas seulement de chiffres ou de viewers. C'est cette énergie qu'elle insuffle à chaque live, cette capacité à transcender le jeu et à transformer une simple soirée en événement légendaire.</p>
+        :root {
+            --twitch-purple: #9146FF;
+            --bg-dark: #0e0e10;
+            --card-bg: #18181b;
+            --text-main: #efeff1;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(14,14,16,0.8), rgba(14,14,16,1)), 
+                        radial-gradient(circle at top, var(--twitch-purple), transparent 70%);
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 5rem;
+            margin: 0;
+            background: linear-gradient(to right, #fff, #bf94ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: #adadb8;
+            margin-top: 10px;
+        }
+
+        .btn-twitch {
+            margin-top: 30px;
+            padding: 15px 40px;
+            background-color: var(--twitch-purple);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-twitch:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(145, 70, 255, 0.4);
+        }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid var(--twitch-purple);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>House of Laura</h1>
+        <p class="tagline">Bien plus qu'une streameuse. Une icône.</p>
+        <a href="https://www.twitch.tv/houseoflaura" target="_blank" class="btn-twitch">Entrer dans l'Arène</a>
+    </header>
+
+    <div class="content">
+        <div class="feature-card">
+            <h3>Pourquoi la GOAT ?</h3>
+            <p>Il ne s'agit pas seulement de chiffres ou de viewers. C'est cette énergie qu'elle insuffle à chaque live, cette capacité à transcender le jeu et à transformer une simple soirée en événement légendaire.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>L'Énergie du Live</h3>
+            <p>Elle n'est pas là pour suivre la tendance, elle la crée. Entre moments de try-hard intenses et éclats de rire mémorables, House of Laura définit ce que devrait être le divertissement sur Twitch aujourd'hui.</p>
+        </div>
     </div>
 
-    <div class="feature-card">
-        <h3>L'Énergie du Live</h3>
-        <p>Elle n'est pas là pour suivre la tendance, elle la crée. Entre moments de try-hard intenses et éclats de rire mémorables, House of Laura définit ce que devrait être le divertissement sur Twitch aujourd'hui.</p>
-    </div>
-</div>
+</body>
+</html>
