@@ -3,32 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Conclusion | House of Laura</title>
+    <title>Un message pour Laura | House of Laura</title>
     <style>
         body { 
             background-color: #0e0e10; 
-            color: #fff; 
-            font-family: 'Poppins', sans-serif; 
+            color: #efeff1; 
+            font-family: 'Inter', sans-serif; 
             display: flex; 
             flex-direction: column; 
             align-items: center; 
             justify-content: center; 
-            height: 100vh; 
+            min-height: 100vh; 
             margin: 0; 
+            padding: 20px;
             text-align: center;
         }
         
-        .final-msg { 
-            font-size: 3rem; 
+        .container { max-width: 700px; }
+
+        h1 { 
+            font-family: 'Poppins', sans-serif; 
+            font-size: 3.5rem; 
+            margin-bottom: 20px;
             background: linear-gradient(to right, #9146FF, #ff00ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: pulse 2s infinite;
         }
 
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.6; }
+        .touching-text { 
+            font-size: 1.3rem; 
+            line-height: 1.8; 
+            color: #ccc; 
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .thank-you-box {
+            background: #18181b;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #9146FF;
+            margin-top: 20px;
         }
 
         .back-home { 
@@ -36,15 +51,27 @@
             color: #9146FF; 
             text-decoration: none; 
             border-bottom: 1px solid #9146FF;
+            padding-bottom: 2px;
         }
     </style>
 </head>
 <body>
 
-    <h1 class="final-msg">Merci d'être toi.</h1>
-    <p>La GOAT, c'est pas juste un titre. C'est Laura.</p>
-    
-    <a href="index.html" class="back-home">Retour au calme</a>
+    <div class="container">
+        <h1>Merci d'être toi.</h1>
+        
+        <div class="touching-text">
+            <p>Parfois, on ne réalise pas à quel point un simple "live" peut changer une journée. </p>
+            <p>Au milieu du chaos, ton espace est devenu un lieu où l'on peut juste être soi-même, respirer, et rire. Tu ne fais pas que divertir, tu rassembles. Tu donnes de la force sans même le savoir.</p>
+        </div>
+
+        <div class="thank-you-box">
+            <p>Pour chaque moment partagé, pour ton authenticité et cette bienveillance qui fait de toi une personne à part : <strong>merci.</strong></p>
+            <p>Tu n'es pas seulement la GOAT du stream, tu es une inspiration pour nous tous.</p>
+        </div>
+        
+        <a href="index.html" class="back-home">Retour à l'accueil</a>
+    </div>
 
 </body>
 </html>
