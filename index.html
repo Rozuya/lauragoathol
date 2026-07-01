@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>House of Laura | The GOAT</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400&display=swap');
+
+        body {
+            margin: 0;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Section Accueil */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 { font-family: 'Playfair Display', serif; font-size: 4rem; color: #fff; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2rem; font-weight: 300; color: #888; margin-bottom: 40px; }
+        
+        .cta {
+            padding: 12px 30px;
+            border: 1px solid #fff;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            transition: 0.4s;
+        }
+        .cta:hover { background-color: #fff; color: #000; }
+
+        /* Section Hommage */
+        .hommage { padding: 100px 20px; max-width: 900px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card-content { background: #111; padding: 25px; border-radius: 10px; border: 1px solid #222; }
+        .card-content h3 { color: #fff; margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <!-- Partie 1: Accueil -->
+    <div class="hero">
+        <h1>House of Laura</h1>
+        <p class="subtitle">L'excellence derrière l'écran.</p>
+        <a href="#hommage" class="cta">Découvrir l'hommage</a>
+    </div>
+
+    <!-- Partie 2: Hommage -->
+    <section id="hommage" class="hommage">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; text-align: center; margin-bottom: 50px;">Pourquoi la GOAT ?</h2>
+        
+        <div class="grid">
+            <div class="card-content">
+                <h3>Le Talent</h3>
+                <p>Une maîtrise du jeu qui impressionne à chaque live.</p>
+            </div>
+            <div class="card-content">
+                <h3>La Communauté</h3>
+                <p>Une ambiance unique, bienveillante et toujours au top.</p>
+            </div>
+            <div class="card-content">
+                <h3>L'Inspiration</h3>
+                <p>La référence absolue pour tous ceux qui lancent un stream.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
